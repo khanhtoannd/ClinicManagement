@@ -65,6 +65,7 @@ namespace ClinicManagement
             }
         }
 
+
         private void chkShowPassword_CheckedChanged(object sender, EventArgs e)
         {
             txtPassword.PasswordChar = chkShowPassword.Checked ? '\0' : '*';

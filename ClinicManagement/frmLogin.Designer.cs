@@ -38,67 +38,53 @@
             // 
             // txtUsername
             // 
-            this.txtUsername.Location = new System.Drawing.Point(106, 38);
-            this.txtUsername.Multiline = true;
+            resources.ApplyResources(this.txtUsername, "txtUsername");
             this.txtUsername.Name = "txtUsername";
-            this.txtUsername.Size = new System.Drawing.Size(222, 43);
-            this.txtUsername.TabIndex = 0;
             // 
             // txtPassword
             // 
-            this.txtPassword.Location = new System.Drawing.Point(106, 125);
-            this.txtPassword.Multiline = true;
+            resources.ApplyResources(this.txtPassword, "txtPassword");
             this.txtPassword.Name = "txtPassword";
-            this.txtPassword.Size = new System.Drawing.Size(222, 43);
-            this.txtPassword.TabIndex = 1;
             // 
             // btnLogin
             // 
-            this.btnLogin.Location = new System.Drawing.Point(106, 220);
+            this.btnLogin.BackColor = System.Drawing.Color.HotPink;
+            resources.ApplyResources(this.btnLogin, "btnLogin");
+            this.btnLogin.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.btnLogin.Name = "btnLogin";
-            this.btnLogin.Size = new System.Drawing.Size(77, 74);
-            this.btnLogin.TabIndex = 2;
-            this.btnLogin.Text = "Enter";
-            this.btnLogin.UseVisualStyleBackColor = true;
+            this.btnLogin.UseVisualStyleBackColor = false;
             this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
             // 
             // chkShowPassword
             // 
-            this.chkShowPassword.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.chkShowPassword.Location = new System.Drawing.Point(343, 127);
+            resources.ApplyResources(this.chkShowPassword, "chkShowPassword");
             this.chkShowPassword.Name = "chkShowPassword";
-            this.chkShowPassword.Size = new System.Drawing.Size(20, 20);
-            this.chkShowPassword.TabIndex = 3;
-            this.chkShowPassword.Text = "\r\n";
             this.chkShowPassword.UseVisualStyleBackColor = true;
             this.chkShowPassword.CheckedChanged += new System.EventHandler(this.chkShowPassword_CheckedChanged);
             // 
             // btnExit
             // 
-            this.btnExit.Location = new System.Drawing.Point(251, 220);
+            this.btnExit.BackColor = System.Drawing.Color.HotPink;
+            this.btnExit.DialogResult = System.Windows.Forms.DialogResult.Cancel;
+            resources.ApplyResources(this.btnExit, "btnExit");
+            this.btnExit.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.btnExit.Name = "btnExit";
-            this.btnExit.Size = new System.Drawing.Size(77, 74);
-            this.btnExit.TabIndex = 4;
-            this.btnExit.Text = "Exit";
-            this.btnExit.UseVisualStyleBackColor = true;
+            this.btnExit.UseVisualStyleBackColor = false;
+            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
             // frmLogin
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AcceptButton = this.btnLogin;
+            resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(442, 456);
+            this.BackColor = System.Drawing.SystemColors.HotTrack;
+            this.CancelButton = this.btnExit;
             this.Controls.Add(this.btnExit);
             this.Controls.Add(this.chkShowPassword);
             this.Controls.Add(this.btnLogin);
             this.Controls.Add(this.txtPassword);
             this.Controls.Add(this.txtUsername);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmLogin";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "System Login";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

@@ -109,6 +109,12 @@
     <EmbeddedResource Include="frmDoctorsLINQ.resx">
       <DependentUpon>frmDoctorsLINQ.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmLogin.aa-DJ.resx">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLogin.aa.resx">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmLogin.resx">
       <DependentUpon>frmLogin.cs</DependentUpon>
     </EmbeddedResource>
