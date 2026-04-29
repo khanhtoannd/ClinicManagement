@@ -37,6 +37,7 @@
             this.doctorsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.patientsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.servicesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.seviceToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.operationsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.appointmentsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.medicalRecordsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -44,6 +45,7 @@
             this.reportsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.statisticsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.invoiceDetailsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -59,13 +61,13 @@
             // logoutToolStripMenuItem
             // 
             this.logoutToolStripMenuItem.Name = "logoutToolStripMenuItem";
-            this.logoutToolStripMenuItem.Size = new System.Drawing.Size(224, 28);
+            this.logoutToolStripMenuItem.Size = new System.Drawing.Size(148, 28);
             this.logoutToolStripMenuItem.Text = "Logout";
             // 
             // exitToolStripMenuItem
             // 
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(224, 28);
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(148, 28);
             this.exitToolStripMenuItem.Text = "Exit";
             // 
             // managementToolStripMenuItem
@@ -74,7 +76,8 @@
             this.usersToolStripMenuItem,
             this.doctorsToolStripMenuItem,
             this.patientsToolStripMenuItem,
-            this.servicesToolStripMenuItem});
+            this.servicesToolStripMenuItem,
+            this.seviceToolStripMenuItem});
             this.managementToolStripMenuItem.Name = "managementToolStripMenuItem";
             this.managementToolStripMenuItem.Size = new System.Drawing.Size(127, 27);
             this.managementToolStripMenuItem.Text = "Management";
@@ -82,36 +85,45 @@
             // usersToolStripMenuItem
             // 
             this.usersToolStripMenuItem.Name = "usersToolStripMenuItem";
-            this.usersToolStripMenuItem.Size = new System.Drawing.Size(156, 28);
+            this.usersToolStripMenuItem.Size = new System.Drawing.Size(173, 28);
             this.usersToolStripMenuItem.Text = "Users";
             this.usersToolStripMenuItem.Click += new System.EventHandler(this.mnUsers_Click);
             // 
             // doctorsToolStripMenuItem
             // 
             this.doctorsToolStripMenuItem.Name = "doctorsToolStripMenuItem";
-            this.doctorsToolStripMenuItem.Size = new System.Drawing.Size(156, 28);
+            this.doctorsToolStripMenuItem.Size = new System.Drawing.Size(173, 28);
             this.doctorsToolStripMenuItem.Text = "Doctors";
             this.doctorsToolStripMenuItem.Click += new System.EventHandler(this.mnDoctors_Click);
             // 
             // patientsToolStripMenuItem
             // 
             this.patientsToolStripMenuItem.Name = "patientsToolStripMenuItem";
-            this.patientsToolStripMenuItem.Size = new System.Drawing.Size(156, 28);
+            this.patientsToolStripMenuItem.Size = new System.Drawing.Size(173, 28);
             this.patientsToolStripMenuItem.Text = "Patients";
             this.patientsToolStripMenuItem.Click += new System.EventHandler(this.mnPatients_Click);
             // 
             // servicesToolStripMenuItem
             // 
             this.servicesToolStripMenuItem.Name = "servicesToolStripMenuItem";
-            this.servicesToolStripMenuItem.Size = new System.Drawing.Size(156, 28);
-            this.servicesToolStripMenuItem.Text = "Services";
+            this.servicesToolStripMenuItem.Size = new System.Drawing.Size(173, 28);
+            this.servicesToolStripMenuItem.Text = "Specialties";
+            this.servicesToolStripMenuItem.Click += new System.EventHandler(this.mnSpecialties_Click);
+            // 
+            // seviceToolStripMenuItem
+            // 
+            this.seviceToolStripMenuItem.Name = "seviceToolStripMenuItem";
+            this.seviceToolStripMenuItem.Size = new System.Drawing.Size(173, 28);
+            this.seviceToolStripMenuItem.Text = "Services";
+            this.seviceToolStripMenuItem.Click += new System.EventHandler(this.seviceToolStripMenuItem_Click);
             // 
             // operationsToolStripMenuItem
             // 
             this.operationsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.appointmentsToolStripMenuItem,
             this.medicalRecordsToolStripMenuItem,
-            this.invoicesToolStripMenuItem});
+            this.invoicesToolStripMenuItem,
+            this.invoiceDetailsToolStripMenuItem});
             this.operationsToolStripMenuItem.Name = "operationsToolStripMenuItem";
             this.operationsToolStripMenuItem.Size = new System.Drawing.Size(108, 27);
             this.operationsToolStripMenuItem.Text = "Operations";
@@ -119,20 +131,23 @@
             // appointmentsToolStripMenuItem
             // 
             this.appointmentsToolStripMenuItem.Name = "appointmentsToolStripMenuItem";
-            this.appointmentsToolStripMenuItem.Size = new System.Drawing.Size(220, 28);
+            this.appointmentsToolStripMenuItem.Size = new System.Drawing.Size(224, 28);
             this.appointmentsToolStripMenuItem.Text = "Appointments";
+            this.appointmentsToolStripMenuItem.Click += new System.EventHandler(this.mnAppointments_Click);
             // 
             // medicalRecordsToolStripMenuItem
             // 
             this.medicalRecordsToolStripMenuItem.Name = "medicalRecordsToolStripMenuItem";
-            this.medicalRecordsToolStripMenuItem.Size = new System.Drawing.Size(220, 28);
+            this.medicalRecordsToolStripMenuItem.Size = new System.Drawing.Size(224, 28);
             this.medicalRecordsToolStripMenuItem.Text = "Medical Records";
+            this.medicalRecordsToolStripMenuItem.Click += new System.EventHandler(this.medicalRecordsToolStripMenuItem_Click);
             // 
             // invoicesToolStripMenuItem
             // 
             this.invoicesToolStripMenuItem.Name = "invoicesToolStripMenuItem";
-            this.invoicesToolStripMenuItem.Size = new System.Drawing.Size(220, 28);
+            this.invoicesToolStripMenuItem.Size = new System.Drawing.Size(224, 28);
             this.invoicesToolStripMenuItem.Text = "Invoices";
+            this.invoicesToolStripMenuItem.Click += new System.EventHandler(this.invoicesToolStripMenuItem_Click);
             // 
             // reportsToolStripMenuItem
             // 
@@ -147,6 +162,7 @@
             this.statisticsToolStripMenuItem.Name = "statisticsToolStripMenuItem";
             this.statisticsToolStripMenuItem.Size = new System.Drawing.Size(160, 28);
             this.statisticsToolStripMenuItem.Text = "Statistics";
+            this.statisticsToolStripMenuItem.Click += new System.EventHandler(this.statisticsToolStripMenuItem_Click);
             // 
             // menuStrip1
             // 
@@ -165,6 +181,13 @@
             this.menuStrip1.TabIndex = 1;
             this.menuStrip1.Text = "menuStrip1";
             this.menuStrip1.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.menuStrip1_ItemClicked);
+            // 
+            // invoiceDetailsToolStripMenuItem
+            // 
+            this.invoiceDetailsToolStripMenuItem.Name = "invoiceDetailsToolStripMenuItem";
+            this.invoiceDetailsToolStripMenuItem.Size = new System.Drawing.Size(224, 28);
+            this.invoiceDetailsToolStripMenuItem.Text = "Invoice Details";
+            this.invoiceDetailsToolStripMenuItem.Click += new System.EventHandler(this.invoiceDetailsToolStripMenuItem_Click);
             // 
             // frmMain
             // 
@@ -208,5 +231,7 @@
         private System.Windows.Forms.ToolStripMenuItem reportsToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem statisticsToolStripMenuItem;
         private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem seviceToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem invoiceDetailsToolStripMenuItem;
     }
 }

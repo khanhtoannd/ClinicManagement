@@ -56,13 +56,32 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Class2.cs" />
     <Compile Include="DataContext.cs" />
     <Compile Include="DBServices.cs" />
+    <Compile Include="frmAppointmentsLINQ.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAppointmentsLINQ.Designer.cs">
+      <DependentUpon>frmAppointmentsLINQ.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmDoctorsLINQ.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmDoctorsLINQ.Designer.cs">
       <DependentUpon>frmDoctorsLINQ.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmInvoiceDetailsLINQ.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmInvoiceDetailsLINQ.Designer.cs">
+      <DependentUpon>frmInvoiceDetailsLINQ.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmInvoicesLINQ.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmInvoicesLINQ.Designer.cs">
+      <DependentUpon>frmInvoicesLINQ.cs</DependentUpon>
     </Compile>
     <Compile Include="frmLogin.cs">
       <SubType>Form</SubType>
@@ -76,11 +95,11 @@
     <Compile Include="frmMain.Designer.cs">
       <DependentUpon>frmMain.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmPatients.cs">
+    <Compile Include="frmMedicalRecordsLINQ.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmPatients.Designer.cs">
-      <DependentUpon>frmPatients.cs</DependentUpon>
+    <Compile Include="frmMedicalRecordsLINQ.Designer.cs">
+      <DependentUpon>frmMedicalRecordsLINQ.cs</DependentUpon>
     </Compile>
     <Compile Include="frmPatientsLINQ.cs">
       <SubType>Form</SubType>
@@ -88,11 +107,23 @@
     <Compile Include="frmPatientsLINQ.Designer.cs">
       <DependentUpon>frmPatientsLINQ.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmUsers.cs">
+    <Compile Include="frmServicesLINQ.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmUsers.Designer.cs">
-      <DependentUpon>frmUsers.cs</DependentUpon>
+    <Compile Include="frmServicesLINQ.Designer.cs">
+      <DependentUpon>frmServicesLINQ.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSpecialtiesLINQ.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSpecialtiesLINQ.Designer.cs">
+      <DependentUpon>frmSpecialtiesLINQ.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmStatisticsLINQ.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmStatisticsLINQ.Designer.cs">
+      <DependentUpon>frmStatisticsLINQ.cs</DependentUpon>
     </Compile>
     <Compile Include="frmUsersLINQ.cs">
       <SubType>Form</SubType>
@@ -102,12 +133,26 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="tblAppointments.cs" />
     <Compile Include="tblDoctors.cs" />
+    <Compile Include="tblInvoiceDetails.cs" />
+    <Compile Include="tblInvoices.cs" />
+    <Compile Include="tblMedicalRecords.cs" />
     <Compile Include="tblPatients.cs" />
+    <Compile Include="tblServices.cs" />
     <Compile Include="tblSpecialties.cs" />
     <Compile Include="tblUsers.cs" />
+    <EmbeddedResource Include="frmAppointmentsLINQ.resx">
+      <DependentUpon>frmAppointmentsLINQ.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmDoctorsLINQ.resx">
       <DependentUpon>frmDoctorsLINQ.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmInvoiceDetailsLINQ.resx">
+      <DependentUpon>frmInvoiceDetailsLINQ.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmInvoicesLINQ.resx">
+      <DependentUpon>frmInvoicesLINQ.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmLogin.aa-DJ.resx">
       <DependentUpon>frmLogin.cs</DependentUpon>
@@ -121,14 +166,20 @@
     <EmbeddedResource Include="frmMain.resx">
       <DependentUpon>frmMain.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmPatients.resx">
-      <DependentUpon>frmPatients.cs</DependentUpon>
+    <EmbeddedResource Include="frmMedicalRecordsLINQ.resx">
+      <DependentUpon>frmMedicalRecordsLINQ.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmPatientsLINQ.resx">
       <DependentUpon>frmPatientsLINQ.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmUsers.resx">
-      <DependentUpon>frmUsers.cs</DependentUpon>
+    <EmbeddedResource Include="frmServicesLINQ.resx">
+      <DependentUpon>frmServicesLINQ.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSpecialtiesLINQ.resx">
+      <DependentUpon>frmSpecialtiesLINQ.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmStatisticsLINQ.resx">
+      <DependentUpon>frmStatisticsLINQ.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmUsersLINQ.resx">
       <DependentUpon>frmUsersLINQ.cs</DependentUpon>
