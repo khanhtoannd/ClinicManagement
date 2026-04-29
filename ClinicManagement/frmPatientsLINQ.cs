@@ -58,7 +58,6 @@ namespace ClinicManagement
             cbbGender.Items.Add("Female");
             cbbGender.Items.Add("Other");
             cbbGender.DropDownStyle = ComboBoxStyle.DropDownList;
-
             LoadGridData();
         }
 
