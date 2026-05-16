@@ -42,10 +42,10 @@
             this.appointmentsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.medicalRecordsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.invoicesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.invoiceDetailsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.reportsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.statisticsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.invoiceDetailsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -133,23 +133,30 @@
             // appointmentsToolStripMenuItem
             // 
             this.appointmentsToolStripMenuItem.Name = "appointmentsToolStripMenuItem";
-            this.appointmentsToolStripMenuItem.Size = new System.Drawing.Size(224, 28);
+            this.appointmentsToolStripMenuItem.Size = new System.Drawing.Size(220, 28);
             this.appointmentsToolStripMenuItem.Text = "Appointments";
             this.appointmentsToolStripMenuItem.Click += new System.EventHandler(this.mnAppointments_Click);
             // 
             // medicalRecordsToolStripMenuItem
             // 
             this.medicalRecordsToolStripMenuItem.Name = "medicalRecordsToolStripMenuItem";
-            this.medicalRecordsToolStripMenuItem.Size = new System.Drawing.Size(224, 28);
+            this.medicalRecordsToolStripMenuItem.Size = new System.Drawing.Size(220, 28);
             this.medicalRecordsToolStripMenuItem.Text = "Medical Records";
             this.medicalRecordsToolStripMenuItem.Click += new System.EventHandler(this.medicalRecordsToolStripMenuItem_Click);
             // 
             // invoicesToolStripMenuItem
             // 
             this.invoicesToolStripMenuItem.Name = "invoicesToolStripMenuItem";
-            this.invoicesToolStripMenuItem.Size = new System.Drawing.Size(224, 28);
+            this.invoicesToolStripMenuItem.Size = new System.Drawing.Size(220, 28);
             this.invoicesToolStripMenuItem.Text = "Invoices";
             this.invoicesToolStripMenuItem.Click += new System.EventHandler(this.invoicesToolStripMenuItem_Click);
+            // 
+            // invoiceDetailsToolStripMenuItem
+            // 
+            this.invoiceDetailsToolStripMenuItem.Name = "invoiceDetailsToolStripMenuItem";
+            this.invoiceDetailsToolStripMenuItem.Size = new System.Drawing.Size(220, 28);
+            this.invoiceDetailsToolStripMenuItem.Text = "Invoice Details";
+            this.invoiceDetailsToolStripMenuItem.Click += new System.EventHandler(this.invoiceDetailsToolStripMenuItem_Click);
             // 
             // reportsToolStripMenuItem
             // 
@@ -183,13 +190,6 @@
             this.menuStrip1.TabIndex = 1;
             this.menuStrip1.Text = "menuStrip1";
             this.menuStrip1.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.menuStrip1_ItemClicked);
-            // 
-            // invoiceDetailsToolStripMenuItem
-            // 
-            this.invoiceDetailsToolStripMenuItem.Name = "invoiceDetailsToolStripMenuItem";
-            this.invoiceDetailsToolStripMenuItem.Size = new System.Drawing.Size(224, 28);
-            this.invoiceDetailsToolStripMenuItem.Text = "Invoice Details";
-            this.invoiceDetailsToolStripMenuItem.Click += new System.EventHandler(this.invoiceDetailsToolStripMenuItem_Click);
             // 
             // frmMain
             // 

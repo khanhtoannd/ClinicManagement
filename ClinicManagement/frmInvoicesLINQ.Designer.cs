@@ -406,6 +406,7 @@
             this.Controls.Add(this.tableLayoutPanel1);
             this.Controls.Add(this.dgvInvoices);
             this.Font = new System.Drawing.Font("Segoe UI Semibold", 7.5F, System.Drawing.FontStyle.Bold);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmInvoicesLINQ";
             this.Text = "frmInvoicesLINQ";
             this.Load += new System.EventHandler(this.frmInvoicesLINQ_Load);
