@@ -380,6 +380,7 @@
             this.Controls.Add(this.btnAdd);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Font = new System.Drawing.Font("Segoe UI Semibold", 7.5F, System.Drawing.FontStyle.Bold);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmInvoiceDetailsLINQ";
             this.Text = "frmInvoiceDetailsLINQ";
             this.Load += new System.EventHandler(this.frmInvoiceDetailsLINQ_Load);
